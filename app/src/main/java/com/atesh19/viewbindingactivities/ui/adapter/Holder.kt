@@ -1,10 +1,10 @@
-package com.atesh19.viewbindingactivities.adap
+package com.atesh19.viewbindingactivities.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.atesh19.viewbindingactivities.data.model.RVModel
 import com.atesh19.viewbindingactivities.databinding.AdapterItemListBinding
-import com.atesh19.viewbindingactivities.model.RVModel
 import com.bumptech.glide.Glide
 
 class Holder(
@@ -15,14 +15,19 @@ class Holder(
 ) {
 
 
-    fun bind(rvModel: RVModel) {
+    fun bind(rvModel: RVModel, meneToxun: (String) -> Unit) {
 
         with(binding) {
             txtComment.text = rvModel.textContent
             Glide.with(parent.context)
                 .load(rvModel.imageUrl)
                 .into(picImage)
+
+            txtComment.setOnClickListener{
+                meneToxun(rvModel.textContent)
+            }
         }
+
     }
 }
 //// ViewHolder

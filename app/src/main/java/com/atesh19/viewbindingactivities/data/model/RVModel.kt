@@ -1,4 +1,4 @@
-package com.atesh19.viewbindingactivities.model
+package com.atesh19.viewbindingactivities.data.model
 
 data class RVModel(
     val imageUrl: String = "",

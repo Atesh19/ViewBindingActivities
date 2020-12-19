@@ -1,6 +1,6 @@
  package com.atesh19.viewbindingactivities.Mock
 
-import com.atesh19.viewbindingactivities.model.RVModel
+import com.atesh19.viewbindingactivities.data.model.RVModel
 
 object Mock {
 
