@@ -1,8 +1,9 @@
  package com.atesh19.viewbindingactivities.Mock
 
 import com.atesh19.viewbindingactivities.data.model.RVModel
+import java.util.*
 
-object Mock {
+ object Mock {
 
     fun getMockData(): ArrayList<RVModel> {
         val mockList = arrayListOf<RVModel>()

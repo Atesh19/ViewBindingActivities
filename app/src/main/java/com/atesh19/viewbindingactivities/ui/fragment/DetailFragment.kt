@@ -7,14 +7,10 @@ import com.atesh19.viewbindingactivities.R
 class DetailFragment : Fragment(R.layout.fragment_detail) {
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
     }
-
-
-
 
 }
 

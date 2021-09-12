@@ -30,6 +30,13 @@ class Holder(
 
     }
 }
+
+
+
+
+
+
+
 //// ViewHolder
 //class ViewBindingExampleHolder(
 //    private val binding: AdapterItemViewBindingExampleBinding
